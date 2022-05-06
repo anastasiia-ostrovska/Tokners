@@ -1,5 +1,5 @@
 {
-  "name": " ",
+  "name": "tokners",
   "version": "0.0.1",
   "description": "",
   "keywords": "",
@@ -7,11 +7,14 @@
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
-    "dev": "parcel index.html --open",
+    "dev": "parcel index.html --open && npm run sass",
     "start": "npm run build && npm run dev",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.1"
   }
 }

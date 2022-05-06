@@ -1,0 +1,12 @@
+@mixin font ($f-S, $f-W, $l-H, $color: white) {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: $f-S;
+  font-weight: $f-W;
+  line-height: $l-H;
+  color: $color;
+}
+
+@mixin box-shadow ($color) {
+  box-shadow: 0 15px 25px;
+  color: $color;
+}
