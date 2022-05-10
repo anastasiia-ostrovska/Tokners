@@ -47,8 +47,8 @@
 
 <div class="wrapper">
   <header class="header">
-    <div class="logo_wrapper">
-      <a class="logo_link" href="#"><img src="img/logo/logo_main.svg" alt="logo"></a>
+    <div class="header_logo">
+      <a class="header_logo_link" href="#"><img src="img/logo/logo_main.svg" alt="logo"></a>
     </div>
 
     <div class="header_menu_wrapper">
@@ -78,21 +78,26 @@
     <section class="sec_1">
       <div class="sec_1_article">
         <article>
-          <p class="tokners_are">At Tokners we are</p>
+          <p class="sec_1_article_tokners">At Tokners we are</p>
 
           <h1>Reimagining social media through the power of the blockchain.</h1>
 
-          <p class="sec_1_text">We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own
+          <p class="sec_1_article_text">We are creating social media 3.0 with influencers, celebrities and creators
+            being able to launch their own
             digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be
             owned and traded on the Tknrs network</p>
 
-          <div><a href="#">Learn More</a></div>
+          <a class="sec_1_article_link" href="#">
+            <div class="sec_1_article_link_button">Learn More</div>
+          </a>
         </article>
       </div>
 
-      <div class="sec_1_img_wrapper">
-        <img src="img/sec_1_main.png" alt="phones picture">
-      </div>
+      <picture class="sec_1_picture">
+        <source media="(min-width: 769px)" srcset="img/sec_1_main_desktop.png">
+        <source media="(min-width: 320px)" srcset="img/sec_1_main_mobile.png">
+        <img src="img/sec_1_main_mobile.png" srcset="img/sec_1_main_mobile.png" alt="phones picture">
+      </picture>
     </section>
 
 
