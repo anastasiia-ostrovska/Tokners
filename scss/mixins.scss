@@ -6,10 +6,39 @@
   color: $color;
 }
 
-@mixin box-shadow ($s-color) {
-  box-shadow: 0 15px 25px;
-  color: $s-color;
-  }
 @mixin margins ($marg...) {
   margin: $marg;
 }
+
+@mixin circle ($color) {
+  display: flex;
+  max-width: 70px;
+  margin-bottom: 10px;
+  background-color: $color;
+  border-radius: 50%;
+}
+
+@mixin figure ($color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 82px;
+  height: 82px;
+  background-color: $color;
+  border-radius: 50% 50% 50% 20%;
+}
+
+@mixin dot ($color) {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: $color;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+@mixin box-shadow ($color) {
+  box-shadow: 0 15px 25px;
+  color: $color;
+  }

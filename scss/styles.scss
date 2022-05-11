@@ -124,11 +124,7 @@ img {
     border-radius: 25px;
 
     &_figure {
-      display: flex;
-      max-width: 70px;
-      margin-bottom: 10px;
-      background-color: $C-1;
-      border-radius: 50%;
+      @include circle($C-1);
       @include box-shadow($C-1o);
 
       &_icon {
@@ -184,11 +180,7 @@ img {
 
     &_figure {
       @include box-shadow($C-2o);
-      display: flex;
-      max-width: 70px;
-      margin-bottom: 10px;
-      background-color: $C-2;
-      border-radius: 50%;
+      @include circle($C-2);
 
       &_icon {
         padding: 25px 23px;
@@ -278,3 +270,243 @@ img {
   }
 }
 
+
+//SECTION_4 PART
+.sec_4 {
+  @include margins(0 20px);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 72px;
+
+  &_block1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+
+    &_top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      &_figure {
+        @include figure($C-1);
+        @include box-shadow($C-1o);
+
+        span {
+          @include font(26px, 700, 36px, $C-5)
+        }
+      }
+
+      &_dot-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+
+        &_dot {
+          @include dot($C-1)
+        }
+
+        span {
+          @include font(18px, 700, 36px);
+        }
+      }
+    }
+
+    &_text {
+
+      ol {
+        counter-reset: item;
+        list-style-type: none;
+      }
+
+      li {
+        display: flex;
+        @include font(18px, 400, 34px);
+        opacity: 0.7;
+        list-style-position: inside;
+
+        &:before {
+          @include font(12px, 700, 34px, $C-1);
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+
+  &_block2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+
+    &_top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      &_figure {
+        @include figure($C-2);
+        @include box-shadow($C-2o);
+
+        span {
+          @include font(26px, 700, 36px, $C-5)
+        }
+      }
+
+      &_dot-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+
+        &_dot {
+          @include dot($C-2)
+        }
+
+        span {
+          @include font(18px, 700, 36px);
+        }
+      }
+    }
+
+    &_text {
+
+      ol {
+        counter-reset: item;
+        list-style-type: none;
+      }
+
+      li {
+        display: flex;
+        @include font(18px, 400, 34px);
+        opacity: 0.7;
+        list-style-position: inside;
+
+        &:before {
+          @include font(12px, 700, 34px, $C-2);
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          margin-right: 11px;
+        }
+
+
+      }
+    }
+  }
+
+  &_block3 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+
+    &_top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      &_figure {
+        @include figure($C-3);
+        @include box-shadow($C-3o);
+
+        span {
+          @include font(26px, 700, 36px, $C-5)
+        }
+      }
+
+      &_dot-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+
+        &_dot {
+          @include dot($C-3)
+        }
+
+        span {
+          @include font(18px, 700, 36px);
+        }
+      }
+    }
+
+    &_text {
+
+      ol {
+        counter-reset: item;
+        list-style-type: none;
+      }
+
+      li {
+        display: flex;
+        @include font(18px, 400, 34px);
+        opacity: 0.7;
+        list-style-position: inside;
+
+        &:before {
+          @include font(12px, 700, 34px, $C-3);
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+
+  &_block4 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+
+    &_top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+
+      &_figure {
+        @include figure($C-4);
+        @include box-shadow($C-4o);
+
+        span {
+          @include font(26px, 700, 36px, $C-5)
+        }
+      }
+
+      &_dot-text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 44px;
+
+        &_dot {
+          @include dot($C-4)
+        }
+
+        span {
+          @include font(18px, 700, 36px);
+        }
+      }
+    }
+
+    &_text {
+
+      ol {
+        counter-reset: item;
+        list-style-type: none;
+      }
+
+      li {
+        display: flex;
+        @include font(18px, 400, 34px);
+        opacity: 0.7;
+        list-style-position: inside;
+
+        &:before {
+          @include font(12px, 700, 34px, $C-4);
+          content: counter(item, decimal-leading-zero) " ";
+          counter-increment: item;
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+
+
+}
