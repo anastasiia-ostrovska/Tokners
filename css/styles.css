@@ -13,13 +13,17 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
-  padding: 0 20px;
+  max-width: 420px;
   background-color: #0f1320;
   background-image: url("../img/bg-mobile.png");
   background-repeat: no-repeat; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 .header {
+  margin: 0 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -34,34 +38,37 @@
   flex-direction: column;
   margin-bottom: 40px; }
   .sec_1_article {
+    margin: 0 20px;
     display: flex;
     flex-direction: column; }
     .sec_1_article_tokners {
-      margin-bottom: 10px;
       font-family: "Century-Gothic", sans-serif;
       font-size: 14px;
       font-weight: 700;
       line-height: 24px;
       color: white;
+      margin-bottom: 10px;
       background: -webkit-linear-gradient(#00b4ec, #2b3087);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
     .sec_1_article h1 {
-      margin-bottom: 20px;
       font-family: "Century-Gothic", sans-serif;
       font-size: 36px;
       font-weight: 700;
       line-height: 40px;
-      color: white; }
+      color: white;
+      margin-bottom: 20px; }
     .sec_1_article_text {
-      margin-bottom: 30px;
       font-family: "Century-Gothic", sans-serif;
       font-size: 14px;
       font-weight: 400;
       line-height: 22px;
       color: #DDE2FF;
+      margin-bottom: 30px;
       opacity: 0.6; }
     .sec_1_article_link {
+      box-shadow: 0 15px 25px;
+      color: #22A75D40;
       position: relative;
       z-index: 1;
       display: flex;
@@ -70,9 +77,7 @@
       width: 147px;
       height: 48px;
       background-color: #22A75D;
-      border-radius: 52px;
-      box-shadow: 0 15px 25px;
-      color: #22A75D40; }
+      border-radius: 52px; }
       .sec_1_article_link_button {
         font-family: "Century-Gothic", sans-serif;
         font-size: 14px;
@@ -88,6 +93,7 @@
       z-index: 0; }
 
 .sec_2 {
+  margin: 0 20px;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px; }
@@ -131,13 +137,15 @@
       display: flex;
       flex-direction: row; }
       .sec_2_block1_link span {
-        margin-right: 6px;
         font-family: "Century-Gothic", sans-serif;
         font-size: 15px;
         font-weight: 700;
         line-height: 17px;
         color: #22A75D;
+        margin-right: 6px;
         text-decoration: underline; }
+      .sec_2_block1_link_img {
+        display: flex; }
       .sec_2_block1_link img {
         margin-bottom: -3px; }
   .sec_2_block2 {
@@ -145,13 +153,13 @@
     background-color: #171B29;
     border-radius: 25px; }
     .sec_2_block2_figure {
+      box-shadow: 0 15px 25px;
+      color: #2278D440;
       display: flex;
       max-width: 70px;
       margin-bottom: 10px;
       background-color: #2278D4;
-      border-radius: 50%;
-      box-shadow: 0 15px 25px;
-      color: #2278D440; }
+      border-radius: 50%; }
       .sec_2_block2_figure_icon {
         padding: 25px 23px; }
     .sec_2_block2_article {
@@ -179,12 +187,54 @@
       display: flex;
       flex-direction: row; }
       .sec_2_block2_link span {
-        margin-right: 6px;
         font-family: "Century-Gothic", sans-serif;
         font-size: 15px;
         font-weight: 700;
         line-height: 17px;
         color: #2278D4;
+        margin-right: 6px;
         text-decoration: underline; }
+      .sec_2_block2_link_img {
+        display: flex; }
       .sec_2_block2_link img {
         margin-bottom: -3px; }
+
+.sec_3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px; }
+  .sec_3_picture {
+    display: flex;
+    justify-content: center; }
+  .sec_3_block2 {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    border-radius: 0 125px 0 0;
+    background-color: #ffffff; }
+    .sec_3_block2 h2 {
+      font-family: "Century-Gothic", sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 40px;
+      color: #0f1320;
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 260px;
+      margin-bottom: 30px; }
+    .sec_3_block2 span {
+      font-family: "Century-Gothic", sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #0f1320;
+      display: flex;
+      margin-bottom: 20px;
+      opacity: 0.6; }
+    .sec_3_block2 p {
+      font-family: "Century-Gothic", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #0f1320;
+      opacity: 0.6; }

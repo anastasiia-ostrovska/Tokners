@@ -19,16 +19,21 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 375px;
-  padding: 0 20px;
-  background-color: $bgColor;
+  max-width: 420px;
+  background-color: $bgColorMain;
   background-image: url('../img/bg-mobile.png');
   background-repeat: no-repeat;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 
 //HEADER PART
 .header {
+  @include margins(0 20px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -51,29 +56,31 @@
   margin-bottom: 40px;
 
   &_article {
+    @include margins(0 20px);
     display: flex;
     flex-direction: column;
 
     &_tokners {
-      margin-bottom: 10px;
       @include font(14px, 700, 24px);
+      margin-bottom: 10px;
       background: -webkit-linear-gradient(#00b4ec, #2b3087);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
     h1 {
-      margin-bottom: 20px;
       @include font(36px, 700, 40px);
+      margin-bottom: 20px;
     }
 
     &_text {
-      margin-bottom: 30px;
       @include font(14px, 400, 22px, #DDE2FF);
+      margin-bottom: 30px;
       opacity: 0.6;
     }
 
     &_link {
+      @include box-shadow($C-1o);
       position: relative;
       z-index: 1;
       display: flex;
@@ -83,7 +90,6 @@
       height: 48px;
       background-color: $C-1;
       border-radius: 52px;
-      @include box-shadow($C-1o);
 
       &_button {
         @include font(14px, 700, 17px);
@@ -104,8 +110,9 @@
 }
 
 
-//SECTION_1 PART
+//SECTION_2 PART
 .sec_2 {
+  @include margins(0 20px);
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
@@ -113,7 +120,7 @@
   &_block1 {
     margin-bottom: 10px;
     padding: 30px 30px 42px;
-    background-color: $C-5;
+    background-color: $bgC-Grey;
     border-radius: 25px;
 
     &_figure {
@@ -155,9 +162,13 @@
       flex-direction: row;
 
       span {
-        margin-right: 6px;
         @include font(15px, 700, 17px, $C-1);
+        margin-right: 6px;
         text-decoration: underline;
+      }
+
+      &_img {
+        display: flex;
       }
 
       img {
@@ -168,16 +179,16 @@
 
   &_block2 {
     padding: 30px 30px 42px;
-    background-color: $C-5;
+    background-color: $bgC-Grey;
     border-radius: 25px;
 
     &_figure {
+      @include box-shadow($C-2o);
       display: flex;
       max-width: 70px;
       margin-bottom: 10px;
       background-color: $C-2;
       border-radius: 50%;
-      @include box-shadow($C-2o);
 
       &_icon {
         padding: 25px 23px;
@@ -210,9 +221,13 @@
       flex-direction: row;
 
       span {
-        margin-right: 6px;
         @include font(15px, 700, 17px, $C-2);
+        margin-right: 6px;
         text-decoration: underline;
+      }
+
+      &_img {
+        display: flex;
       }
 
       img {
@@ -221,3 +236,45 @@
     }
   }
 }
+
+
+//SECTION_3 PART
+.sec_3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+
+  &_picture {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_block2 {
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    border-radius: 0 125px 0 0;
+    background-color: $bgC-White;
+
+    h2 {
+      @include font(36px, 700, 40px, $C-5);
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 260px;
+      margin-bottom: 30px;
+    }
+
+    span {
+      @include font(14px, 700, 20px, $C-5);
+      display: flex;
+      margin-bottom: 20px;
+      opacity: 0.6;
+    }
+
+    p {
+      @include font(14px, 400, 24px, $C-5);
+      opacity: 0.6;
+    }
+  }
+}
+

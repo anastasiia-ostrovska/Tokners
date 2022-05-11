@@ -10,3 +10,6 @@
   box-shadow: 0 15px 25px;
   color: $s-color;
   }
+@mixin margins ($marg...) {
+  margin: $marg;
+}
