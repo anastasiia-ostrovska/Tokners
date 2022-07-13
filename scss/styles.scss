@@ -15,6 +15,25 @@
   font-style: normal;
 }
 
+.figure_1 {
+  @include figure($C-1);
+  @include figure-box-shadow($C-1o);
+}
+
+.figure_2 {
+  @include figure($C-2);
+  @include figure-box-shadow($C-2o);
+}
+
+.figure_3 {
+  @include figure($C-3);
+  @include figure-box-shadow($C-3o);
+}
+
+.figure_4 {
+  @include figure($C-4);
+  @include figure-box-shadow($C-4o);
+}
 
 .wrapper {
   display: flex;
@@ -601,107 +620,120 @@ img {
 
 
 //SECTION_6 PART
-.sec_6 {
-  @include margins(0 0 10px);
+.sec_6_wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
   background-image: url("../img/sec_6_bg_mobile.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
+  width: 100%;
+}
+
+.sec_6 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 157px;
 
   h3 {
-    @include margins(105px 61px 17px);
-    @include font(36px, 700, 64px);
+    @include margins(105px 41px 17px);
+    @include font(36px, 700, 54px);
   }
 
   &_slider {
     @include margins(17px 0 211px);
     display: flex;
     flex-direction: row;
-    width: 100%;
-  }
-
-  &_slide {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: $C-0;
-    border-radius: 25px;
-    max-width: unset;
-    max-height: unset;
+    margin-bottom: 30px;
     width: 100%;
 
-    &_figure {
-      @include figure($C-2);
-      @include figure-box-shadow($C-2o);
-      z-index: 1;
-      margin: 73px 121px 28px 132px;
-
-      span {
-        @include font(26px, 700, 36px, $C-5);
-      }
-    }
-
-    &_number {
-      @include font(180px, 700, 288px);
-      position: absolute;
-      top: -20px;
-      z-index: 0;
-      opacity: 0.08;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 1px  #191B21;
-    }
-
-    &_central-text {
+    .sec_6_slide {
+      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: $C-0;
+      border-radius: 25px;
+      max-width: unset;
+      max-height: unset;
+      width: 100%;
 
-      &_heading {
-        @include font(32px, 700, 54px, &C-5);
-        margin-bottom: 4px;
-      }
+      &_figure {
+        z-index: 1;
+        margin: 73px 121px 28px 132px;
 
-      time {
-        @include font(16px, 700, 20px, #191B21);
-        margin-bottom: 40px;
-        opacity: 0.8;
-      }
-    }
-
-    &_price {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-bottom: 54px;
-
-      &_bnn {
-        @include font(20px, 700, 20px, #191B21);
-        margin-bottom: 20px;
-        opacity: 0.8;
-      }
-
-      span {
-        @include font(16px, 400, 20px, #191B21);
-        opacity: 0.8;
-
-        strong {
-          font-weight: 700;
+        span {
+          @include font(26px, 700, 36px, $C-5);
         }
       }
 
-      &_soft {
-        margin-bottom: 10px;
+      &_number {
+        @include font(180px, 700, 288px);
+        position: absolute;
+        top: -20px;
+        z-index: 0;
+        opacity: 0.08;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 1px #191B21;
       }
 
+      &_central-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_heading {
+          @include font(32px, 700, 54px, $C-5);
+          margin-bottom: 4px;
+        }
+
+        time {
+          @include font(16px, 700, 20px, #191B21);
+          margin-bottom: 40px;
+          opacity: 0.8;
+        }
+      }
+
+      &_price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 54px;
+
+        &_bnn {
+          @include font(20px, 700, 20px, #191B21);
+          margin-bottom: 20px;
+          opacity: 0.8;
+        }
+
+        span {
+          @include font(16px, 400, 20px, #191B21);
+          opacity: 0.8;
+
+          strong {
+            font-weight: 700;
+          }
+        }
+
+        &_soft {
+          margin-bottom: 10px;
+        }
+
+      }
+
+
     }
-
-
   }
 
+  &_slider_dots {
+    display: flex;
+    flex-direction: row;
 
+    &_dot {
+      width: 4px;
+      height: 4px;
+      border: 1px $C-0 solid;
+      border-radius: 50%;
+    }
+  }
 }
+
