@@ -1,15 +1,15 @@
 @font-face {
-  font-family: 'Century-Gothic';
+  font-family: "Century-Gothic";
   src: url("../fonts/CenturyGothic.woff") format("woff");
   font-weight: 400;
-  font-style: normal; }
-
+  font-style: normal;
+}
 @font-face {
-  font-family: 'Century-Gothic';
+  font-family: "Century-Gothic";
   src: url("../fonts/CenturyGothic-Bold.woff") format("woff");
   font-weight: 700;
-  font-style: normal; }
-
+  font-style: normal;
+}
 .figure_1 {
   display: flex;
   justify-content: center;
@@ -20,7 +20,8 @@
   background-color: #22A75D;
   border-radius: 50% 50% 50% 20%;
   box-shadow: 0 15px 25px;
-  color: #22A75D40; }
+  color: rgba(34, 167, 93, 0.2509803922);
+}
 
 .figure_2 {
   display: flex;
@@ -32,7 +33,8 @@
   background-color: #2278D4;
   border-radius: 50% 50% 50% 20%;
   box-shadow: 0 15px 25px;
-  color: #2278D440; }
+  color: rgba(34, 120, 212, 0.2509803922);
+}
 
 .figure_3 {
   display: flex;
@@ -44,7 +46,8 @@
   background-color: #FFD100;
   border-radius: 50% 50% 50% 20%;
   box-shadow: 0 15px 25px;
-  color: #FFD10040; }
+  color: rgba(255, 209, 0, 0.2509803922);
+}
 
 .figure_4 {
   display: flex;
@@ -56,7 +59,8 @@
   background-color: #E20613;
   border-radius: 50% 50% 50% 20%;
   box-shadow: 0 15px 25px;
-  color: #E2061340; }
+  color: rgba(226, 6, 19, 0.2509803922);
+}
 
 .wrapper {
   display: flex;
@@ -65,663 +69,784 @@
   background-color: #0f1320;
   background-image: url("../img/bg-mobile.png");
   background-repeat: no-repeat;
-  background-size: 420px; }
+  background-size: 420px;
+}
 
 img {
   width: 100%;
-  height: auto; }
+  height: auto;
+}
 
 .header {
   margin: 0 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
-  .header_logo {
-    display: flex;
-    margin: 45px 0 56px; }
-    .header_logo img {
-      max-width: 155px; }
+  justify-content: space-between;
+}
+.header_logo {
+  display: flex;
+  margin: 45px 0 56px;
+}
+.header_logo img {
+  max-width: 155px;
+}
 
 .sec_1 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px; }
-  .sec_1_article {
-    margin: 0 20px;
-    display: flex;
-    flex-direction: column; }
-    .sec_1_article_tokners {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 24px;
-      color: white;
-      margin-bottom: 10px;
-      background: -webkit-linear-gradient(#00b4ec, #2b3087);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-    .sec_1_article h1 {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 40px;
-      color: white;
-      margin-bottom: 20px; }
-    .sec_1_article_text {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 22px;
-      color: #DDE2FF;
-      margin-bottom: 30px;
-      opacity: 0.6; }
-    .sec_1_article_link {
-      box-shadow: 0 15px 25px;
-      color: #22A75D40;
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 147px;
-      height: 48px;
-      background-color: #22A75D;
-      border-radius: 52px; }
-      .sec_1_article_link_button {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 17px;
-        color: white;
-        text-decoration: none; }
-  .sec_1_picture {
-    display: flex;
-    justify-content: center;
-    margin-top: -110px; }
-    .sec_1_picture img {
-      z-index: 0; }
+  margin-bottom: 40px;
+}
+.sec_1_article {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sec_1_article_tokners {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(#00b4ec, #2b3087);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.sec_1_article h1 {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+.sec_1_article_text {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #DDE2FF;
+  margin-bottom: 30px;
+  opacity: 0.6;
+}
+.sec_1_article_link {
+  box-shadow: 0 15px 25px;
+  color: rgba(34, 167, 93, 0.2509803922);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147px;
+  height: 48px;
+  background-color: #22A75D;
+  border-radius: 52px;
+}
+.sec_1_article_link_button {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  color: white;
+  text-decoration: none;
+}
+.sec_1_picture {
+  display: flex;
+  justify-content: center;
+  margin-top: -110px;
+}
+.sec_1_picture img {
+  z-index: 0;
+}
 
 .sec_2 {
   margin: 0 20px 60px;
   display: flex;
-  flex-direction: column; }
-  .sec_2_block1 {
-    margin-bottom: 10px;
-    padding: 30px 30px 42px;
-    background-color: #171B29;
-    border-radius: 25px; }
-    .sec_2_block1_figure {
-      display: flex;
-      max-width: 70px;
-      margin-bottom: 10px;
-      background-color: #22A75D;
-      border-radius: 50%;
-      box-shadow: 0 15px 25px;
-      color: #22A75D40; }
-      .sec_2_block1_figure_icon {
-        padding: 25px 23px; }
-    .sec_2_block1_article {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px; }
-      .sec_2_block1_article_heading {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 54px;
-        color: white;
-        margin-bottom: 10px; }
-        .sec_2_block1_article_heading span {
-          text-decoration: underline;
-          color: #22A75D; }
-      .sec_2_block1_article_text {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: white;
-        opacity: 50%; }
-    .sec_2_block1_link {
-      display: flex;
-      flex-direction: row; }
-      .sec_2_block1_link span {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 17px;
-        color: #22A75D;
-        margin-right: 6px;
-        text-decoration: underline; }
-      .sec_2_block1_link_img {
-        display: flex; }
-      .sec_2_block1_link img {
-        margin-bottom: -3px; }
-  .sec_2_block2 {
-    padding: 30px 30px 42px;
-    background-color: #171B29;
-    border-radius: 25px; }
-    .sec_2_block2_figure {
-      box-shadow: 0 15px 25px;
-      color: #2278D440;
-      display: flex;
-      max-width: 70px;
-      margin-bottom: 10px;
-      background-color: #2278D4;
-      border-radius: 50%; }
-      .sec_2_block2_figure_icon {
-        padding: 25px 23px; }
-    .sec_2_block2_article {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px; }
-      .sec_2_block2_article_heading {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 28px;
-        font-weight: 700;
-        line-height: 54px;
-        color: white;
-        margin-bottom: 10px; }
-        .sec_2_block2_article_heading span {
-          text-decoration: underline;
-          color: #2278D4; }
-      .sec_2_block2_article_text {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 24px;
-        color: white;
-        opacity: 50%; }
-    .sec_2_block2_link {
-      display: flex;
-      flex-direction: row; }
-      .sec_2_block2_link span {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 17px;
-        color: #2278D4;
-        margin-right: 6px;
-        text-decoration: underline; }
-      .sec_2_block2_link_img {
-        display: flex; }
-      .sec_2_block2_link img {
-        margin-bottom: -3px; }
+  flex-direction: column;
+}
+.sec_2_block1 {
+  margin-bottom: 10px;
+  padding: 30px 30px 42px;
+  background-color: #171B29;
+  border-radius: 25px;
+}
+.sec_2_block1_figure {
+  display: flex;
+  max-width: 70px;
+  margin-bottom: 10px;
+  background-color: #22A75D;
+  border-radius: 50%;
+  box-shadow: 0 15px 25px;
+  color: rgba(34, 167, 93, 0.2509803922);
+}
+.sec_2_block1_figure_icon {
+  padding: 25px 23px;
+}
+.sec_2_block1_article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sec_2_block1_article_heading {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 54px;
+  color: white;
+  margin-bottom: 10px;
+}
+.sec_2_block1_article_heading span {
+  text-decoration: underline;
+  color: #22A75D;
+}
+.sec_2_block1_article_text {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  opacity: 50%;
+}
+.sec_2_block1_link {
+  display: flex;
+  flex-direction: row;
+}
+.sec_2_block1_link span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #22A75D;
+  margin-right: 6px;
+  text-decoration: underline;
+}
+.sec_2_block1_link_img {
+  display: flex;
+}
+.sec_2_block1_link img {
+  margin-bottom: -3px;
+}
+.sec_2_block2 {
+  padding: 30px 30px 42px;
+  background-color: #171B29;
+  border-radius: 25px;
+}
+.sec_2_block2_figure {
+  box-shadow: 0 15px 25px;
+  color: rgba(34, 120, 212, 0.2509803922);
+  display: flex;
+  max-width: 70px;
+  margin-bottom: 10px;
+  background-color: #2278D4;
+  border-radius: 50%;
+}
+.sec_2_block2_figure_icon {
+  padding: 25px 23px;
+}
+.sec_2_block2_article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.sec_2_block2_article_heading {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 54px;
+  color: white;
+  margin-bottom: 10px;
+}
+.sec_2_block2_article_heading span {
+  text-decoration: underline;
+  color: #2278D4;
+}
+.sec_2_block2_article_text {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  opacity: 50%;
+}
+.sec_2_block2_link {
+  display: flex;
+  flex-direction: row;
+}
+.sec_2_block2_link span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #2278D4;
+  margin-right: 6px;
+  text-decoration: underline;
+}
+.sec_2_block2_link_img {
+  display: flex;
+}
+.sec_2_block2_link img {
+  margin-bottom: -3px;
+}
 
 .sec_3 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 70px; }
-  .sec_3_picture {
-    display: flex;
-    justify-content: center; }
-  .sec_3_block2 {
-    display: flex;
-    flex-direction: column;
-    padding: 70px 20px;
-    border-radius: 0 125px 0 0;
-    background-color: #ffffff; }
-    .sec_3_block2 h2 {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 36px;
-      font-weight: 700;
-      line-height: 40px;
-      color: #0f1320;
-      display: flex;
-      flex-wrap: wrap;
-      max-width: 260px;
-      margin-bottom: 30px; }
-    .sec_3_block2 strong {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #0f1320;
-      display: flex;
-      margin-bottom: 20px;
-      opacity: 0.6; }
-    .sec_3_block2 p {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      color: #0f1320;
-      opacity: 0.6; }
+  margin-bottom: 70px;
+}
+.sec_3_picture {
+  display: flex;
+  justify-content: center;
+}
+.sec_3_block2 {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 20px;
+  border-radius: 0 125px 0 0;
+  background-color: #ffffff;
+}
+.sec_3_block2 h2 {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #0f1320;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 260px;
+  margin-bottom: 30px;
+}
+.sec_3_block2 strong {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #0f1320;
+  display: flex;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+.sec_3_block2 p {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0f1320;
+  opacity: 0.6;
+}
 
 .sec_4 {
   margin: 0 20px 72px;
   display: flex;
-  flex-direction: column; }
-  .sec_4_block1 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 42px; }
-    .sec_4_block1_top {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px; }
-      .sec_4_block1_top_figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 82px;
-        height: 82px;
-        background-color: #22A75D;
-        border-radius: 50% 50% 50% 20%;
-        box-shadow: 0 15px 25px;
-        color: #22A75D40; }
-        .sec_4_block1_top_figure span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 26px;
-          font-weight: 700;
-          line-height: 36px;
-          color: #0f1320; }
-      .sec_4_block1_top_dot-text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 44px; }
-        .sec_4_block1_top_dot-text_dot {
-          display: flex;
-          margin-bottom: 1px;
-          background-color: #22A75D;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%; }
-        .sec_4_block1_top_dot-text span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 36px;
-          color: white; }
-    .sec_4_block1_text ol {
-      counter-reset: item;
-      list-style-type: none; }
-    .sec_4_block1_text li {
-      display: flex;
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-      color: white;
-      opacity: 0.7;
-      list-style-position: inside; }
-      .sec_4_block1_text li:before {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 34px;
-        color: #22A75D;
-        content: counter(item, decimal-leading-zero) " ";
-        counter-increment: item;
-        margin-right: 11px; }
-  .sec_4_block2 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 42px; }
-    .sec_4_block2_top {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px; }
-      .sec_4_block2_top_figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 82px;
-        height: 82px;
-        background-color: #2278D4;
-        border-radius: 50% 50% 50% 20%;
-        box-shadow: 0 15px 25px;
-        color: #2278D440; }
-        .sec_4_block2_top_figure span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 26px;
-          font-weight: 700;
-          line-height: 36px;
-          color: #0f1320; }
-      .sec_4_block2_top_dot-text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 44px; }
-        .sec_4_block2_top_dot-text_dot {
-          display: flex;
-          margin-bottom: 1px;
-          background-color: #2278D4;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%; }
-        .sec_4_block2_top_dot-text span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 36px;
-          color: white; }
-    .sec_4_block2_text ol {
-      counter-reset: item;
-      list-style-type: none; }
-    .sec_4_block2_text li {
-      display: flex;
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-      color: white;
-      opacity: 0.7;
-      list-style-position: inside; }
-      .sec_4_block2_text li:before {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 34px;
-        color: #2278D4;
-        content: counter(item, decimal-leading-zero) " ";
-        counter-increment: item;
-        margin-right: 11px; }
-  .sec_4_block3 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 42px; }
-    .sec_4_block3_top {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px; }
-      .sec_4_block3_top_figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 82px;
-        height: 82px;
-        background-color: #FFD100;
-        border-radius: 50% 50% 50% 20%;
-        box-shadow: 0 15px 25px;
-        color: #FFD10040; }
-        .sec_4_block3_top_figure span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 26px;
-          font-weight: 700;
-          line-height: 36px;
-          color: #0f1320; }
-      .sec_4_block3_top_dot-text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 44px; }
-        .sec_4_block3_top_dot-text_dot {
-          display: flex;
-          margin-bottom: 1px;
-          background-color: #FFD100;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%; }
-        .sec_4_block3_top_dot-text span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 36px;
-          color: white; }
-    .sec_4_block3_text ol {
-      counter-reset: item;
-      list-style-type: none; }
-    .sec_4_block3_text li {
-      display: flex;
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-      color: white;
-      opacity: 0.7;
-      list-style-position: inside; }
-      .sec_4_block3_text li:before {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 34px;
-        color: #FFD100;
-        content: counter(item, decimal-leading-zero) " ";
-        counter-increment: item;
-        margin-right: 11px; }
-  .sec_4_block4 {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 42px; }
-    .sec_4_block4_top {
-      display: flex;
-      flex-direction: row;
-      margin-bottom: 20px; }
-      .sec_4_block4_top_figure {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-        width: 82px;
-        height: 82px;
-        background-color: #E20613;
-        border-radius: 50% 50% 50% 20%;
-        box-shadow: 0 15px 25px;
-        color: #E2061340; }
-        .sec_4_block4_top_figure span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 26px;
-          font-weight: 700;
-          line-height: 36px;
-          color: #0f1320; }
-      .sec_4_block4_top_dot-text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 44px; }
-        .sec_4_block4_top_dot-text_dot {
-          display: flex;
-          margin-bottom: 1px;
-          background-color: #E20613;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%; }
-        .sec_4_block4_top_dot-text span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 36px;
-          color: white; }
-    .sec_4_block4_text ol {
-      counter-reset: item;
-      list-style-type: none; }
-    .sec_4_block4_text li {
-      display: flex;
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 34px;
-      color: white;
-      opacity: 0.7;
-      list-style-position: inside; }
-      .sec_4_block4_text li:before {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 34px;
-        color: #E20613;
-        content: counter(item, decimal-leading-zero) " ";
-        counter-increment: item;
-        margin-right: 11px; }
+  flex-direction: column;
+}
+.sec_4_block1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+}
+.sec_4_block1_top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.sec_4_block1_top_figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 82px;
+  height: 82px;
+  background-color: #22A75D;
+  border-radius: 50% 50% 50% 20%;
+  box-shadow: 0 15px 25px;
+  color: rgba(34, 167, 93, 0.2509803922);
+}
+.sec_4_block1_top_figure span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0f1320;
+}
+.sec_4_block1_top_dot-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+.sec_4_block1_top_dot-text_dot {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #22A75D;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.sec_4_block1_top_dot-text span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+.sec_4_block1_text ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+.sec_4_block1_text li {
+  display: flex;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: white;
+  opacity: 0.7;
+  list-style-position: inside;
+}
+.sec_4_block1_text li:before {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #22A75D;
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  margin-right: 11px;
+}
+.sec_4_block2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+}
+.sec_4_block2_top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.sec_4_block2_top_figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 82px;
+  height: 82px;
+  background-color: #2278D4;
+  border-radius: 50% 50% 50% 20%;
+  box-shadow: 0 15px 25px;
+  color: rgba(34, 120, 212, 0.2509803922);
+}
+.sec_4_block2_top_figure span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0f1320;
+}
+.sec_4_block2_top_dot-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+.sec_4_block2_top_dot-text_dot {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #2278D4;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.sec_4_block2_top_dot-text span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+.sec_4_block2_text ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+.sec_4_block2_text li {
+  display: flex;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: white;
+  opacity: 0.7;
+  list-style-position: inside;
+}
+.sec_4_block2_text li:before {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #2278D4;
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  margin-right: 11px;
+}
+.sec_4_block3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+}
+.sec_4_block3_top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.sec_4_block3_top_figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 82px;
+  height: 82px;
+  background-color: #FFD100;
+  border-radius: 50% 50% 50% 20%;
+  box-shadow: 0 15px 25px;
+  color: rgba(255, 209, 0, 0.2509803922);
+}
+.sec_4_block3_top_figure span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0f1320;
+}
+.sec_4_block3_top_dot-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+.sec_4_block3_top_dot-text_dot {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #FFD100;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.sec_4_block3_top_dot-text span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+.sec_4_block3_text ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+.sec_4_block3_text li {
+  display: flex;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: white;
+  opacity: 0.7;
+  list-style-position: inside;
+}
+.sec_4_block3_text li:before {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #FFD100;
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  margin-right: 11px;
+}
+.sec_4_block4 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 42px;
+}
+.sec_4_block4_top {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.sec_4_block4_top_figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 82px;
+  height: 82px;
+  background-color: #E20613;
+  border-radius: 50% 50% 50% 20%;
+  box-shadow: 0 15px 25px;
+  color: rgba(226, 6, 19, 0.2509803922);
+}
+.sec_4_block4_top_figure span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0f1320;
+}
+.sec_4_block4_top_dot-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+.sec_4_block4_top_dot-text_dot {
+  display: flex;
+  margin-bottom: 1px;
+  background-color: #E20613;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.sec_4_block4_top_dot-text span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  color: white;
+}
+.sec_4_block4_text ol {
+  counter-reset: item;
+  list-style-type: none;
+}
+.sec_4_block4_text li {
+  display: flex;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  color: white;
+  opacity: 0.7;
+  list-style-position: inside;
+}
+.sec_4_block4_text li:before {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #E20613;
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item;
+  margin-right: 11px;
+}
 
 .sec_5 {
   margin: 0 20px 42px;
   display: flex;
-  flex-direction: column; }
-  .sec_5_picture {
-    position: relative;
-    display: flex;
-    margin-bottom: 70px; }
-    .sec_5_picture_img {
-      display: flex;
-      z-index: 1; }
-    .sec_5_picture_rectangle {
-      position: absolute;
-      display: flex;
-      right: 0;
-      bottom: 0;
-      z-index: 0; }
-  .sec_5_article {
-    display: flex;
-    flex-direction: column; }
-    .sec_5_article_heading {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 30px; }
-      .sec_5_article_heading_logo {
-        display: flex;
-        margin-bottom: 10px;
-        max-width: 53px;
-        height: auto; }
-      .sec_5_article_heading h3 {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 54px;
-        color: white; }
-    .sec_5_article_text {
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px;
-      color: white;
-      margin-bottom: 20px; }
-      .sec_5_article_text .text-opacity {
-        opacity: 0.6; }
-      .sec_5_article_text strong {
-        font-weight: 700; }
-      .sec_5_article_text_highlighted {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 20px; }
-        .sec_5_article_text_highlighted_quotes {
-          max-width: 12px;
-          max-height: 24px;
-          margin-top: 0;
-          margin-right: 14px; }
-        .sec_5_article_text_highlighted_quotation {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 24px;
-          color: white;
-          font-style: italic; }
-    .sec_5_article_hide {
-      display: flex;
-      font-family: "Century-Gothic", sans-serif;
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 22px;
-      color: #22A75D;
-      text-decoration: none; }
-      .sec_5_article_hide_button {
-        padding-bottom: 3px;
-        border-bottom: 1px dashed; }
+  flex-direction: column;
+}
+.sec_5_picture {
+  position: relative;
+  display: flex;
+  margin-bottom: 70px;
+}
+.sec_5_picture_img {
+  display: flex;
+  z-index: 1;
+}
+.sec_5_picture_rectangle {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.sec_5_article {
+  display: flex;
+  flex-direction: column;
+}
+.sec_5_article_heading {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.sec_5_article_heading_logo {
+  display: flex;
+  margin-bottom: 10px;
+  max-width: 53px;
+  height: auto;
+}
+.sec_5_article_heading h3 {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: white;
+}
+.sec_5_article_text {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+.sec_5_article_text .text-opacity {
+  opacity: 0.6;
+}
+.sec_5_article_text strong {
+  font-weight: 700;
+}
+.sec_5_article_text_highlighted {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.sec_5_article_text_highlighted_quotes {
+  max-width: 12px;
+  max-height: 24px;
+  margin-top: 0;
+  margin-right: 14px;
+}
+.sec_5_article_text_highlighted_quotation {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: white;
+  font-style: italic;
+}
+.sec_5_article_hide {
+  display: flex;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #22A75D;
+  text-decoration: none;
+}
+.sec_5_article_hide_button {
+  padding-bottom: 3px;
+  border-bottom: 1px dashed;
+}
 
 .sec_6_wrapper {
   display: flex;
   background-image: url("../img/sec_6_bg_mobile.svg");
   background-repeat: no-repeat;
-  width: 100%; }
+  width: 100%;
+}
 
 .sec_6 {
   display: flex;
   flex-direction: column;
   margin-right: 20px;
   margin-left: 20px;
-  margin-bottom: 157px; }
-  .sec_6 h3 {
-    margin: 105px 41px 17px;
-    font-family: "Century-Gothic", sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 54px;
-    color: white; }
-  .sec_6_slider {
-    margin: 17px 0 211px;
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    width: 100%; }
-    .sec_6_slider .sec_6_slide {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #FFFFFF;
-      border-radius: 25px;
-      max-width: unset;
-      max-height: unset;
-      width: 100%; }
-      .sec_6_slider .sec_6_slide_figure {
-        z-index: 1;
-        margin: 73px 121px 28px 132px; }
-        .sec_6_slider .sec_6_slide_figure span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 26px;
-          font-weight: 700;
-          line-height: 36px;
-          color: #0f1320; }
-      .sec_6_slider .sec_6_slide_number {
-        font-family: "Century-Gothic", sans-serif;
-        font-size: 180px;
-        font-weight: 700;
-        line-height: 288px;
-        color: white;
-        position: absolute;
-        top: -20px;
-        z-index: 0;
-        opacity: 0.08;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 1px #191B21; }
-      .sec_6_slider .sec_6_slide_central-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center; }
-        .sec_6_slider .sec_6_slide_central-text_heading {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 32px;
-          font-weight: 700;
-          line-height: 54px;
-          color: #0f1320;
-          margin-bottom: 4px; }
-        .sec_6_slider .sec_6_slide_central-text time {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 20px;
-          color: #191B21;
-          margin-bottom: 40px;
-          opacity: 0.8; }
-      .sec_6_slider .sec_6_slide_price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 54px; }
-        .sec_6_slider .sec_6_slide_price_bnn {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 20px;
-          font-weight: 700;
-          line-height: 20px;
-          color: #191B21;
-          margin-bottom: 20px;
-          opacity: 0.8; }
-        .sec_6_slider .sec_6_slide_price span {
-          font-family: "Century-Gothic", sans-serif;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20px;
-          color: #191B21;
-          opacity: 0.8; }
-          .sec_6_slider .sec_6_slide_price span strong {
-            font-weight: 700; }
-        .sec_6_slider .sec_6_slide_price_soft {
-          margin-bottom: 10px; }
-  .sec_6_slider_dots {
-    display: flex;
-    flex-direction: row; }
-    .sec_6_slider_dots_dot {
-      width: 4px;
-      height: 4px;
-      border: 1px #FFFFFF solid;
-      border-radius: 50%; }
+  margin-bottom: 157px;
+}
+.sec_6 h3 {
+  margin: 105px 41px 17px;
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  color: white;
+}
+.sec_6_slider {
+  margin: 17px 0 211px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.sec_6_slider .sec_6_slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  max-width: unset;
+  max-height: unset;
+  width: 100%;
+}
+.sec_6_slider .sec_6_slide_figure {
+  z-index: 1;
+  margin: 73px 121px 28px 132px;
+}
+.sec_6_slider .sec_6_slide_figure span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #0f1320;
+}
+.sec_6_slider .sec_6_slide_number {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 180px;
+  font-weight: 700;
+  line-height: 288px;
+  color: white;
+  position: absolute;
+  top: -20px;
+  z-index: 0;
+  opacity: 0.08;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #191B21;
+}
+.sec_6_slider .sec_6_slide_central-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sec_6_slider .sec_6_slide_central-text_heading {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 54px;
+  color: #0f1320;
+  margin-bottom: 4px;
+}
+.sec_6_slider .sec_6_slide_central-text time {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #191B21;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+.sec_6_slider .sec_6_slide_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 54px;
+}
+.sec_6_slider .sec_6_slide_price_bnn {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #191B21;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+.sec_6_slider .sec_6_slide_price span {
+  font-family: "Century-Gothic", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #191B21;
+  opacity: 0.8;
+}
+.sec_6_slider .sec_6_slide_price span strong {
+  font-weight: 700;
+}
+.sec_6_slider .sec_6_slide_price_soft {
+  margin-bottom: 10px;
+}
+.sec_6_slider_dots {
+  display: flex;
+  flex-direction: row;
+}
+.sec_6_slider_dots_dot {
+  width: 4px;
+  height: 4px;
+  border: 1px #FFFFFF solid;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=styles.css.map */
