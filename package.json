@@ -2,8 +2,8 @@
   "name": "tokners",
   "version": "0.0.1",
   "description": "",
-  "keywords": "",
-  "license": "",
+  "keywords": [],
+  "license": "ISC",
   "author": "",
   "scripts": {
     "build": "parcel build index.html",
@@ -16,5 +16,9 @@
   },
   "dependencies": {
     "node-sass": "^7.0.1"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
   }
 }
